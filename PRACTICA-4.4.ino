@@ -1,15 +1,9 @@
  
 int puls1 = 2; // Pin digital para pulsador 1
 
-int puls2 = 3; // Pin digital para pulsador 2
-
 int buzzerPin =10; // Pin digital para el buzzer
 
 int led1 = 7; // Pin digital para el LED 1
-
-int led2 = 8; // Pin digital para el LED 2
-
-int melodiaActual = 0; // Melodía actual
 
  void setup(){
  pinMode (9, OUTPUT); //pin configurado como salida
