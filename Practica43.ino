@@ -1,7 +1,7 @@
-int pulsador1 = A0;
-int pulsador2 = A1;
-int pulsador3 = A2;
-int pulsador4 = A3;
+int pul1 = A0;
+int pul2 = A1;
+int pul3 = A2;
+int pul4 = A3;
 int led1 = 3;
 int led2 = 4;
 int led3 = 5;
@@ -12,17 +12,17 @@ int led7 = 9;
 int led8 = 10;
 int led9 = 11;
 int led10 = 12;
-int estado1;
-int estado2;
-int estado3;
-int estado4;
+int posicion1;
+int posicion2;
+int posicion3;
+int posicion4;
 
 void setup(){
 Serial.begin(9600);
-pinMode(pulsador1,INPUT);
-pinMode(pulsador2,INPUT);
-pinMode(pulsador3,INPUT);
-pinMode(pulsador4,INPUT);
+pinMode(pul1,INPUT);
+pinMode(pul2,INPUT);
+pinMode(pul3,INPUT);
+pinMode(pul4,INPUT);
 pinMode(led1,OUTPUT);
 pinMode(led2,OUTPUT);
 pinMode(led3,OUTPUT);
@@ -37,14 +37,14 @@ pinMode(led10,OUTPUT);
 }
 
 void loop(){
- estado1 = digitalRead(pulsador1);
- estado2 = digitalRead(pulsador2);
- estado3 = digitalRead(pulsador3);
- estado4 = digitalRead(pulsador4);
-  Serial.println(estado1);
-    Serial.println(estado2);
-  Serial.println(estado3);
-  Serial.println(estado4);
+ estado1 = digitalRead(pul1);
+ estado2 = digitalRead(pul2);
+ estado3 = digitalRead(pul3);
+ estado4 = digitalRead(pul4);
+  Serial.println(posicion1);
+    Serial.println(posicion2);
+  Serial.println(posicion3);
+  Serial.println(posicion4);
 delay(1000);
 
   if(estado1 == 1){
